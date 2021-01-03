@@ -4,6 +4,7 @@
 import * as React from 'react'
 import '../box-styles.css'
 
+// I don't need className here anymore. otherProps could be just children now.
 const Box = ({className = '', style, size, ...otherProps}) => {
   const sizeClassName = size ? `box--${size}` : null
   return (
